@@ -2,6 +2,16 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Overview
+
+This project is a React application that displays a list of items fetched from an API. It includes features like pagination, item detail view, item editing, and deletion. The project uses the following technologies:
+
+- React
+- TypeScript
+- Tailwind CSS
+- Axios
+- React Router
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -44,3 +54,37 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Feature
+
+### Pagination
+
+The application uses pagination to display items. The Pagination component manages the current page and allows navigation between pages. The total number of items is retrieved from the API using Axios.
+
+### Item Details
+
+Clicking on an item displays its details, including options to edit or delete the item.
+
+### Item Editing
+
+The edit functionality allows users to modify item details on a separate page.
+
+### Item Deletion
+
+The delete functionality removes an item from the list and updates the state.
+
+## API Integration
+
+The project integrates with the JSONPlaceholder API to fetch data. Axios is used to make HTTP requests.
+
+### Fetching Items
+
+The items are fetched from the API with pagination support. The total number of items is obtained from the response headers.
+
+### Usage in the Component
+
+The fetched items and total number of items are used in the Home component to manage pagination.
+
+## Custom CSS for Truncation
+
+To ensure that text does not exceed a certain number of lines and is truncated with an ellipsis, custom CSS is used:
